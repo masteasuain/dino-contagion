@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sick_sneeze_1.wav-8fa092797569b9c441868d0f666b2787.sample"
+
+[deps]
+
+source_file="res://audio/sick_sneeze_1.wav"
+source_md5="26c52ed6b42384248f9c6ef94c7483dc"
+
+dest_files=[ "res://.import/sick_sneeze_1.wav-8fa092797569b9c441868d0f666b2787.sample" ]
+dest_md5="2d804da97a740d5b3f23f222a111f959"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

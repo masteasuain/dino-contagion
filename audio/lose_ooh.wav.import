@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lose_ooh.wav-94d3fae07a5df87bfc9842ee951c546f.sample"
+
+[deps]
+
+source_file="res://audio/lose_ooh.wav"
+source_md5="33673314ac6c57f3ec2d373770da06fc"
+
+dest_files=[ "res://.import/lose_ooh.wav-94d3fae07a5df87bfc9842ee951c546f.sample" ]
+dest_md5="9467cee0ff5b7841685fc6ba5bedb1a8"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

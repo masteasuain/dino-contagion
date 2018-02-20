@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/Moco.gd" type="Script" id=1]
+[ext_resource path="res://Tiles/moco_piso.png" type="Texture" id=2]
+[ext_resource path="res://audio/moco_piso.wav" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 150, 150 )
+_sections_unfolded = [ "Resource" ]
+
+[node name="moco" type="Area2D" groups=[
+"moco",
+]]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="." index="0"]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="Sprite" type="Sprite" parent="CollisionShape2D" index="0"]
+
+visible = false
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Audio_moco" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 3 )
+volume_db = -10.0
+autoplay = false
+mix_target = 2
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[connection signal="area_entered" from="." to="." method="_on_Node2D_area_entered"]
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+
+

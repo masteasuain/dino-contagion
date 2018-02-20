@@ -1,0 +1,189 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/PopupWin.gd" type="Script" id=1]
+[ext_resource path="res://audio/win_yeeei.wav" type="AudioStream" id=2]
+[ext_resource path="res://audio/click.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/gui-background.png" type="Texture" id=4]
+[ext_resource path="res://assets/popup_win_text.png" type="Texture" id=5]
+[ext_resource path="res://fonts/Arial_dynamic_big.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/popup_win.png" type="Texture" id=7]
+[ext_resource path="res://assets/button_continue.png" type="Texture" id=8]
+[ext_resource path="res://assets/button_continue_over.png" type="Texture" id=9]
+
+[node name="PopupWin" type="Control" groups=[
+"popup",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="WinFX" type="AudioStreamPlayer" parent="." index="0"]
+
+stream = ExtResource( 2 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[node name="FX-Click" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = ExtResource( 3 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="TranspBackgnd" type="Panel" parent="." index="2"]
+
+modulate = Color( 0, 0, 0, 0.784314 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Background" type="NinePatchRect" parent="." index="3"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -745.0
+margin_top = -480.0
+margin_right = 745.0
+margin_bottom = 180.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 4 )
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="YouWin" type="TextureRect" parent="Background" index="0"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -694.0
+margin_top = -286.0
+margin_right = 693.0
+margin_bottom = 68.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+stretch_mode = 0
+
+[node name="DialogBubble" type="Polygon2D" parent="Background" index="1"]
+
+position = Vector2( 102, 389 )
+polygon = PoolVector2Array( -3, 2, -3, 202, 63, 201, 113, 241, 113, 201, 583, 201, 583, 1 )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 0.2, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="Text" type="Label" parent="Background/DialogBubble" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 20.0
+margin_top = 21.0
+margin_right = 560.0
+margin_bottom = 180.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0.0820313, 0.061203, 0.061203, 1 )
+text = "Let's go home, everybody!"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Picture" type="TextureRect" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -592.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+stretch_mode = 0
+
+[node name="Continue" type="TextureButton" parent="." index="5"]
+
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -700.0
+margin_top = -150.0
+margin_right = -162.0
+margin_bottom = 13.0
+rect_scale = Vector2( 0.8, 0.8 )
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 9 )
+_sections_unfolded = [ "Mouse", "Rect", "Textures" ]
+
+[connection signal="finished" from="FX-Click" to="." method="_on_FXClick_finished"]
+
+[connection signal="pressed" from="Continue" to="." method="_on_Continue_pressed"]
+
+

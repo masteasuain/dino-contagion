@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://animations/Code/DinoBoss.gd" type="Script" id=1]
+[ext_resource path="res://assets/godot-dino-sombra.png" type="Texture" id=2]
+[ext_resource path="res://assets/godot-dino-boss.png" type="Texture" id=3]
+[ext_resource path="res://animations/Dino_boss_idle.tres" type="Animation" id=4]
+[ext_resource path="res://animations/Dino_boss_ill.tres" type="Animation" id=5]
+[ext_resource path="res://animations/Dino_boss_sneeze.tres" type="Animation" id=6]
+[ext_resource path="res://assets/godot-moco-gota.png" type="Texture" id=7]
+[ext_resource path="res://audio/sick_sneeze_boss.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/godot-moco-anim.png" type="Texture" id=9]
+
+[node name="DinoBoss" type="Node2D" groups=[
+"dino",
+"boss",
+]]
+
+scale = Vector2( 1.00031, 0.999845 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Animation", "Offset", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sombrita" type="Sprite" parent="." index="0"]
+
+position = Vector2( -4.49441, -2.02446 )
+scale = Vector2( 1.29772, 0.999293 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+
+position = Vector2( 0, -0.000589371 )
+scale = Vector2( 0.99, 1.1 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -190 )
+vframes = 2
+hframes = 3
+frame = 5
+_sections_unfolded = [ "Offset" ]
+
+[node name="Anim" type="AnimationPlayer" parent="Sprite" index="0"]
+
+root_node = NodePath("..")
+autoplay = "idle"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/idle = ExtResource( 4 )
+anims/ill = ExtResource( 5 )
+anims/sneeze = ExtResource( 6 )
+next/sneeze = "ill"
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="Moquito" type="Sprite" parent="Sprite" index="1"]
+
+position = Vector2( 27.2643, -209.123 )
+scale = Vector2( 1.1, 0.8 )
+texture = ExtResource( 7 )
+offset = Vector2( 3.05081e-05, 50.0078 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="FX sneeze" type="AudioStreamPlayer" parent="Sprite" index="2"]
+
+stream = ExtResource( 8 )
+volume_db = -2.0
+autoplay = false
+mix_target = 2
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="Estornudo" type="Sprite" parent="." index="2"]
+
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 8.94751, -65.6149 )
+rotation = 1.5708
+texture = ExtResource( 9 )
+offset = Vector2( 110, 0 )
+hframes = 5
+frame = 4
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z Index" ]
+
+

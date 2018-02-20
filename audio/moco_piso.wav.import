@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/moco_piso.wav-332ed720281c44001bdfd1043e7f27ba.sample"
+
+[deps]
+
+source_file="res://audio/moco_piso.wav"
+source_md5="4c1dad20afacce055f85aa45e539725b"
+
+dest_files=[ "res://.import/moco_piso.wav-332ed720281c44001bdfd1043e7f27ba.sample" ]
+dest_md5="0ffc651db1f03ac74f25e163a4a0accd"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/win_yeeei.wav-9cefe985d7c51b6cf165fb1edbcf389b.sample"
+
+[deps]
+
+source_file="res://audio/win_yeeei.wav"
+source_md5="0eacbbdf8a7fb27a9662f7df9d560393"
+
+dest_files=[ "res://.import/win_yeeei.wav-9cefe985d7c51b6cf165fb1edbcf389b.sample" ]
+dest_md5="188df18f7ba33882fd272ad1243b33a4"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

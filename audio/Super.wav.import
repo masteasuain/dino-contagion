@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Super.wav-607d135c9c592386a785c231d3761214.sample"
+
+[deps]
+
+source_file="res://audio/Super.wav"
+source_md5="cc1550ac3fd0f1492f9fad7cfb317e72"
+
+dest_files=[ "res://.import/Super.wav-607d135c9c592386a785c231d3761214.sample" ]
+dest_md5="def38ef9a535b4eb70f34f25f5cdf20f"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
