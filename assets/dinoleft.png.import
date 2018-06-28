@@ -7,10 +7,7 @@ path="res://.import/dinoleft.png-2de3dcb710e969ee052f8c016e37ddb4.stex"
 [deps]
 
 source_file="res://assets/dinoleft.png"
-source_md5="42f8166b165420c7c7dfb32088c7e6cb"
-
 dest_files=[ "res://.import/dinoleft.png-2de3dcb710e969ee052f8c016e37ddb4.stex" ]
-dest_md5="5056d1979407d3ac6d336297f2e65574"
 
 [params]
 

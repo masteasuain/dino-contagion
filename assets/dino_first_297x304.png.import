@@ -7,10 +7,7 @@ path="res://.import/dino_first_297x304.png-ff49e5fe61c24bd44c976bb9cbf492e6.stex
 [deps]
 
 source_file="res://assets/dino_first_297x304.png"
-source_md5="5d3ff0c4579e341b65c84f7276d3a135"
-
 dest_files=[ "res://.import/dino_first_297x304.png-ff49e5fe61c24bd44c976bb9cbf492e6.stex" ]
-dest_md5="afd6559deaf6ba527342c84dea97d8df"
 
 [params]
 

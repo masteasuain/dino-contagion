@@ -7,10 +7,7 @@ path="res://.import/gui-dino-select-back-disabled.png-a2ca25142134580695d495640f
 [deps]
 
 source_file="res://assets/gui-dino-select-back-disabled.png"
-source_md5="9961cbdb2b45d0ee3a13c1c39d34eeb7"
-
 dest_files=[ "res://.import/gui-dino-select-back-disabled.png-a2ca25142134580695d495640f85595f.stex" ]
-dest_md5="94d6914859c1d2a3a471071c25eb8532"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/button_continue.png-94b89a7af9eae66d7a7be780d2b3f8ed.stex"
 [deps]
 
 source_file="res://assets/button_continue.png"
-source_md5="2f66f842cd9251231d1c68ccf0f283e7"
-
 dest_files=[ "res://.import/button_continue.png-94b89a7af9eae66d7a7be780d2b3f8ed.stex" ]
-dest_md5="eb0eccb332261aa10c6a1426331c9e8d"
 
 [params]
 

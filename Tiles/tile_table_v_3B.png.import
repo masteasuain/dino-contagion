@@ -7,10 +7,7 @@ path="res://.import/tile_table_v_3B.png-58dd8282b9b1d8ce4aaa1ccfba0e46c1.stex"
 [deps]
 
 source_file="res://Tiles/tile_table_v_3B.png"
-source_md5="7e62915952010424382a7239e4740e37"
-
 dest_files=[ "res://.import/tile_table_v_3B.png-58dd8282b9b1d8ce4aaa1ccfba0e46c1.stex" ]
-dest_md5="96e1123ec23d96b414e4c211db27f7dd"
 
 [params]
 

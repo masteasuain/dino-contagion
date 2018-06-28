@@ -7,10 +7,7 @@ path="res://.import/loop_edit_mode_2.wav-8efd4a949223b08cb69f8fc618fb1b53.sample
 [deps]
 
 source_file="res://audio/loop_edit_mode_2.wav"
-source_md5="0a376c6872483d3bd6437bc5d6f8b152"
-
 dest_files=[ "res://.import/loop_edit_mode_2.wav-8efd4a949223b08cb69f8fc618fb1b53.sample" ]
-dest_md5="97d3d709eed5175e345eb6db474ecf33"
 
 [params]
 

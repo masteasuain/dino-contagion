@@ -7,10 +7,7 @@ path="res://.import/dino_rex_right_392x307.png-2556e8ab08715a7d5608a022d23a9ec2.
 [deps]
 
 source_file="res://assets/dino_rex_right_392x307.png"
-source_md5="bb4d4009cb6f0918650c6289c20397c3"
-
 dest_files=[ "res://.import/dino_rex_right_392x307.png-2556e8ab08715a7d5608a022d23a9ec2.stex" ]
-dest_md5="357c40c01e85cf105568b832cb83e3ae"
 
 [params]
 

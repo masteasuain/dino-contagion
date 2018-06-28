@@ -7,10 +7,7 @@ path="res://.import/error.wav-7758481f0b630740b3553187f425c005.sample"
 [deps]
 
 source_file="res://audio/error.wav"
-source_md5="ad1c2229c441a7b7e2261fa22f45424c"
-
 dest_files=[ "res://.import/error.wav-7758481f0b630740b3553187f425c005.sample" ]
-dest_md5="05995d282fb91c43f4faaefa3aa9743f"
 
 [params]
 

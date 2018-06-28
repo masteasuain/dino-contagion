@@ -7,10 +7,7 @@ path="res://.import/dinoup.png-6d38a9279cf59c50fc9456043456e3c8.stex"
 [deps]
 
 source_file="res://assets/dinoup.png"
-source_md5="5ae5689958635fa86ab4cd2100c59383"
-
 dest_files=[ "res://.import/dinoup.png-6d38a9279cf59c50fc9456043456e3c8.stex" ]
-dest_md5="873fbaa76347fab36fd85748cbc520cc"
 
 [params]
 

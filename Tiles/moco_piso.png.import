@@ -7,10 +7,7 @@ path="res://.import/moco_piso.png-cda5746528a2ae4e2bed1311fd110acd.stex"
 [deps]
 
 source_file="res://Tiles/moco_piso.png"
-source_md5="c3a4cb8ab9a46a6d470e2aea08dded29"
-
 dest_files=[ "res://.import/moco_piso.png-cda5746528a2ae4e2bed1311fd110acd.stex" ]
-dest_md5="a78899c157daca827875404818af6448"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/loading_B.png-a0c4e601e7613419588fa34f3d0adbcb.stex"
 [deps]
 
 source_file="res://assets/loading_B.png"
-source_md5="dc5afdaeea8ce881bf53ccb8c09fedb2"
-
 dest_files=[ "res://.import/loading_B.png-a0c4e601e7613419588fa34f3d0adbcb.stex" ]
-dest_md5="8fc64cc291812ae6ee376eb31b2781fc"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/background.png-c49b2d572a2a6fc52fb0261c4552a464.stex"
 [deps]
 
 source_file="res://Tiles/background.png"
-source_md5="2c6b4fec98275c6cd3f87b025a929e24"
-
 dest_files=[ "res://.import/background.png-c49b2d572a2a6fc52fb0261c4552a464.stex" ]
-dest_md5="5c9c03809ec9e6c6bfa7303e5a2afd9d"
 
 [params]
 

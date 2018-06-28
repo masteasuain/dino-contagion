@@ -7,10 +7,7 @@ path="res://.import/button_close.png-7ad873f2c52a696c5108e0836a197179.stex"
 [deps]
 
 source_file="res://assets/button_close.png"
-source_md5="bfa0b9dad97b8cee1fd50e0907eb8e6e"
-
 dest_files=[ "res://.import/button_close.png-7ad873f2c52a696c5108e0836a197179.stex" ]
-dest_md5="7102c091d072e3f3615b5fa5a42c6cf6"
 
 [params]
 

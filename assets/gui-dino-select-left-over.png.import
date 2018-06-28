@@ -7,10 +7,7 @@ path="res://.import/gui-dino-select-left-over.png-89f48a1f338dd8e1e600a2e2cb02fa
 [deps]
 
 source_file="res://assets/gui-dino-select-left-over.png"
-source_md5="4c19cff0dbd76383f324f68a87a2f831"
-
 dest_files=[ "res://.import/gui-dino-select-left-over.png-89f48a1f338dd8e1e600a2e2cb02fa80.stex" ]
-dest_md5="dd563f8b924f07ecbd01b1c002b82844"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/Dino Contagion Boss Edition.wav-e6b5c31dfdbfa1932ec00417a7c5
 [deps]
 
 source_file="res://audio/Dino Contagion Boss Edition.wav"
-source_md5="f2b9e3f197c670b358104c10c2f4892f"
-
 dest_files=[ "res://.import/Dino Contagion Boss Edition.wav-e6b5c31dfdbfa1932ec00417a7c5c048.sample" ]
-dest_md5="f8e4f6ff1d7fddc5e698d991d4101b88"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/sick_sneeze_first.wav-0d737639c2f8ff1c5d3b97b39e28aade.sampl
 [deps]
 
 source_file="res://audio/sick_sneeze_first.wav"
-source_md5="44eaf1a637679cf3d937afe6b674a44d"
-
 dest_files=[ "res://.import/sick_sneeze_first.wav-0d737639c2f8ff1c5d3b97b39e28aade.sample" ]
-dest_md5="b85b71f99c85bdbb2fbef4a17b61f521"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/tile_chair_moqueado.png-8c823bd03deccd17130dde1bc1724726.ste
 [deps]
 
 source_file="res://Tiles/tile_chair_moqueado.png"
-source_md5="792f70536a632ca60e9d62b3bf444d9a"
-
 dest_files=[ "res://.import/tile_chair_moqueado.png-8c823bd03deccd17130dde1bc1724726.stex" ]
-dest_md5="4e23b583f75fac29b4609540dcced671"
 
 [params]
 

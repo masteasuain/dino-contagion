@@ -7,10 +7,7 @@ path="res://.import/gui-dino-select-right.png-79ee2e408c835cad699609f6cecaec42.s
 [deps]
 
 source_file="res://assets/gui-dino-select-right.png"
-source_md5="8053c4fe1fbbc4ded8cdafb2522607b3"
-
 dest_files=[ "res://.import/gui-dino-select-right.png-79ee2e408c835cad699609f6cecaec42.stex" ]
-dest_md5="1682a374aea13d8373aa827471b007dd"
 
 [params]
 

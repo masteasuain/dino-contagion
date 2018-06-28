@@ -7,10 +7,7 @@ path="res://.import/button_play.png-1f91cfe10ae63296cff142056834dfab.stex"
 [deps]
 
 source_file="res://assets/button_play.png"
-source_md5="8c674ef5d021d4b72e452caaf5f5073d"
-
 dest_files=[ "res://.import/button_play.png-1f91cfe10ae63296cff142056834dfab.stex" ]
-dest_md5="b6742d825e96a81dcb833ff3e6559585"
 
 [params]
 

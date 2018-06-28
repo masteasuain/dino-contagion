@@ -7,10 +7,7 @@ path="res://.import/selector.png-a7694758cc7872914ebbc25816dcc99d.stex"
 [deps]
 
 source_file="res://Tiles/selector.png"
-source_md5="e36e60417df4e18aaaa594d3240d97bb"
-
 dest_files=[ "res://.import/selector.png-a7694758cc7872914ebbc25816dcc99d.stex" ]
-dest_md5="5e96fffecaec503ced12e150451aad8c"
 
 [params]
 

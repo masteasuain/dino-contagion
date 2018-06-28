@@ -7,10 +7,7 @@ path="res://.import/popup_settings_slider_grab_over.png-b10db952e5217611f06453a2
 [deps]
 
 source_file="res://assets/popup_settings_slider_grab_over.png"
-source_md5="fc29804b2ca0599058b0a643234c5343"
-
 dest_files=[ "res://.import/popup_settings_slider_grab_over.png-b10db952e5217611f06453a23fb67e35.stex" ]
-dest_md5="bb2214e014dfd15e657910a48263a684"
 
 [params]
 

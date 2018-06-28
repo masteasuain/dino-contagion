@@ -7,10 +7,7 @@ path="res://.import/gui-abort-contagion.png-54fb83934dd3a5d2eb5f60e1074d47e2.ste
 [deps]
 
 source_file="res://assets/gui-abort-contagion.png"
-source_md5="7739ca999a22efc6ca641b3145237b67"
-
 dest_files=[ "res://.import/gui-abort-contagion.png-54fb83934dd3a5d2eb5f60e1074d47e2.stex" ]
-dest_md5="8f4d5c0238251d82e5efc3730bde5de6"
 
 [params]
 

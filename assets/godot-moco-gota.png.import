@@ -7,10 +7,7 @@ path="res://.import/godot-moco-gota.png-f8dea685f971c4ad31733e0a5dc1efb1.stex"
 [deps]
 
 source_file="res://assets/godot-moco-gota.png"
-source_md5="ba16e073d205bcba47131b2d7a08d5fc"
-
 dest_files=[ "res://.import/godot-moco-gota.png-f8dea685f971c4ad31733e0a5dc1efb1.stex" ]
-dest_md5="3b30bf0c04f0e3e7cdbe35f59bc1cde4"
 
 [params]
 
