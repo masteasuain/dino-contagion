@@ -110,6 +110,11 @@ func getTile(elemento):
 			return 30
 		"dinob2":
 			return 31
+		"bidon":
+			return 32
+		"dinol":
+			return 25
+			
 		_:
 			return -1
 	
