@@ -10,12 +10,20 @@ var mocos
 var dinos
 var jefe
 var popups
-
+const Fileloader = preload("FileLoader.gd") # Relative path
+onready var file_loader = Fileloader.new()
 onready var tilemap_objetos = get_node("principal/TileMap/objects")
 
 var dinoSelected = -1
 		
 func _ready():
+	file_loader.parseFile()
+	var level=file_loader.getLevelMatrix()
+	print (file_loader.getLevelDinor())
+	dinoRight = int(file_loader.getLevelDinor())
+	dinoLeft = int(file_loader.getLevelDinol())
+	dinoFront = int(file_loader.getLevelDinod()	)
+	dinoBack = int(file_loader.getLevelDinou()	)
 	var intro = load("res://scenes/PopupIntro.tscn")
 	get_node("popups").call_deferred("add_child", intro.instance())
 	

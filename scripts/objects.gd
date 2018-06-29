@@ -10,8 +10,9 @@ onready var file_loader = Fileloader.new()
 func _ready():
 	file_loader.parseFile()
 	var level=file_loader.getLevelMatrix()
-	placeTiles(level,1,1)
-	
+	placeTiles(level,file_loader.getLevelColumn(),file_loader.getLevelRow())
+	print (file_loader.getLevelColumn())
+	print (file_loader.getLevelRow())
 	var tiles = get_used_cells()
 	for pos in tiles:
 		
@@ -70,8 +71,8 @@ func placeTiles(elementos, columnas, filas):
 	var index=0
 	var tile=0
 	
-	for i in range(global.ROWS+1):
-		for j in range(global.COLUMNS+2):
+	for i in range(filas):
+		for j in range(columnas):
 			var posicion = Vector2(j-1,i)
 			#tile=getTile(elementos[index])
 			tile=getTile(elementos[index])

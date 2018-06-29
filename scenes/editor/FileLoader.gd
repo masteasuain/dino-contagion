@@ -1,3 +1,4 @@
+# res://scenes/editor/FileLoader.gd
 extends Node
 
 const SEPARATOR=","
