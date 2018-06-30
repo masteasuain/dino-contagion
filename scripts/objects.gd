@@ -76,7 +76,10 @@ func placeTiles(elementos, columnas, filas):
 			var posicion = Vector2(j-1,i)
 			#tile=getTile(elementos[index])
 			tile=getTile(elementos[index])
-			self.set_cellv(posicion, tile)
+			if tile != 99:
+			    self.set_cellv(posicion, tile)
+			if tile == 99:
+				self.set_cellv(posicion, 29, true)
 			index=index+1
 
 func test():
@@ -88,6 +91,10 @@ func getTile(elemento):
 	match elemento:
 		"library":
 			return 3
+		"chair":
+			return 4			
+		"filer":
+			return 6			
 		"pctable":
 			return 8
 		"plant":
@@ -100,6 +107,12 @@ func getTile(elemento):
 			return 13
 		"tableh3":
 			return 15
+		"tablev1":
+			return 18
+		"tablev2":
+			return 20
+		"tablev3":
+			return 22
 		"dino1":
 			return 27
 		"dinof":
@@ -110,10 +123,16 @@ func getTile(elemento):
 			return 30
 		"dinob2":
 			return 31
-		"bidon":
+		"dispenser":
 			return 32
+		"pannels":
+			return 33			
+		"tablev1p":
+			return 34
+		"tablev3p":
+			return 35						
 		"dinol":
-			return 25
+			return 99
 			
 		_:
 			return -1
