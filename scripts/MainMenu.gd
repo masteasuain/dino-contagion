@@ -14,7 +14,7 @@ func _on_Start_pressed():
 
 func _on_FXStart_finished():
 	global.dinos_fixed.clear()
-	get_tree().change_scene("res://scenes/game.tscn")
+	get_tree().change_scene("res://scenes/LevelSelector.tscn")
 
 func _on_Settings_pressed():
 	get_node("FX-Click").play()

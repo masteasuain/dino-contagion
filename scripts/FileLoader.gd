@@ -14,11 +14,13 @@ var dinol =0
 var dinou =0
 var dinod =0
 func _ready():
-	file_path = 'res://Maps/level.dino' 
+	print ("ready func")
+	print (global.level_selected)
+	file_path = 'res://Maps/'+str(global.level_selected)+'.dino' 
 	parseFile()
 
 func parseFile():
-	file_path = 'res://Maps/level.dino' 
+	file_path = 'res://Maps/'+str(global.level_selected)+'.dino' 
 	file = File.new()
 	file.open(file_path,File.READ)
 	levelName=readLevelName()
