@@ -17,9 +17,7 @@ func _ready():
 
 func _on_Button_pressed():
 	gameController.dinoSelected = 0
-	#get_node("UI/SFX_click").play()
-	#get_node("UI/DinoSelector_2/post_it").pressed = false
-	#get_node("UI/DinoSelector_3/post_it").pressed = false
-	#get_node("UI/DinoSelector_4/post_it").pressed = false
+	
 	print("selected DinoFront")
+	get_tree().get_root().get_node("game/UI/SFX_click").play()
 	pass

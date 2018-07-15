@@ -16,7 +16,12 @@ func addItem( value ):
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
-	addItem("test")
+	addItem("1- DinoFront")
+	addItem("2- DinoFront")
+	addItem("3- DinoFront")
+	addItem("4- DinoFront")
+	addItem("5- DinoFront")
+	addItem("6- DinoFront")
 	pass
 
 #func _process(delta):

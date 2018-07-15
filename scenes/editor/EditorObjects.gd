@@ -24,7 +24,7 @@ func _ready():
 	set_process(true) #cursor and player interactions
 	set_process_input(true) #also cursor and player interactions
 	
-	"""
+
 func ubicarDino(tile, scene):
 	
 	self.set_cellv(tile,-1)
@@ -35,7 +35,7 @@ func ubicarDino(tile, scene):
 	dino.position = Vector2(map_to_world(tile).x + 150, map_to_world(tile).y + 250)
 	self.call_deferred("add_child", dino)	
 	global.dinos_fixed[tile] = [dino]
-"""
+
 	
 func placeTiles(elementos, columnas, filas):
 	var index=0
