@@ -225,15 +225,15 @@ texture = ExtResource( 39 )
 [node name="wall_right" type="Sprite" parent="." index="39"]
 position = Vector2( 560.874, 1155.34 )
 texture = ExtResource( 40 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="background" type="Sprite" parent="." index="40"]
-position = Vector2( 1480, 1400 )
+position = Vector2( 1001.82, 1149.82 )
 texture = ExtResource( 41 )
-offset = Vector2( -516.108, -243.66 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
 [node name="dinol" type="Sprite" parent="." index="41"]
-position = Vector2( 1909, 1394.28 )
+position = Vector2( 1392.91, 1113.47 )
 texture = ExtResource( 42 )
-offset = Vector2( -516.108, -243.66 )
-_sections_unfolded = [ "texture" ]
+_sections_unfolded = [ "Offset", "texture" ]
 
