@@ -20,7 +20,7 @@
 [ext_resource path="res://audio/start.wav" type="AudioStream" id=18]
 [ext_resource path="res://audio/loop_intro.wav" type="AudioStream" id=19]
 
-[node name="Background" type="TextureRect"]
+[node name="Background" type="TextureRect" index="0"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -234,7 +234,6 @@ stream = ExtResource( 15 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
-stream_paused = false
 mix_target = 0
 bus = "Master"
 
@@ -243,7 +242,6 @@ stream = ExtResource( 16 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
-stream_paused = false
 mix_target = 0
 bus = "Master"
 
@@ -252,7 +250,6 @@ stream = ExtResource( 17 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
-stream_paused = false
 mix_target = 0
 bus = "Master"
 
@@ -261,7 +258,6 @@ stream = ExtResource( 18 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
-stream_paused = false
 mix_target = 0
 bus = "Master"
 
@@ -270,7 +266,6 @@ stream = ExtResource( 19 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
-stream_paused = false
 mix_target = 0
 bus = "Master"
 
