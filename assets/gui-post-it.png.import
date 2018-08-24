@@ -7,10 +7,7 @@ path="res://.import/gui-post-it.png-50ee1075de81030f339cd6efb06f982c.stex"
 [deps]
 
 source_file="res://assets/gui-post-it.png"
-source_md5="f585c5590fa8afa339dec65f843398e6"
-
 dest_files=[ "res://.import/gui-post-it.png-50ee1075de81030f339cd6efb06f982c.stex" ]
-dest_md5="03b2e5eb028f3b5ca071ff0aef28779a"
 
 [params]
 

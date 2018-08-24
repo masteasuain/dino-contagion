@@ -7,10 +7,7 @@ path="res://.import/godot-dino-first.png-88091ad701ff0acb0e3fba992781292c.stex"
 [deps]
 
 source_file="res://assets/godot-dino-first.png"
-source_md5="cb386cd08f344805178081a2cb20ad04"
-
 dest_files=[ "res://.import/godot-dino-first.png-88091ad701ff0acb0e3fba992781292c.stex" ]
-dest_md5="4304d0dd394b381aa0b7a4c4f0c6f346"
 
 [params]
 

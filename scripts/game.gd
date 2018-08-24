@@ -10,18 +10,33 @@ var mocos
 var dinos
 var jefe
 var popups
-
+const Fileloader = preload("FileLoader.gd") # Relative path
+onready var file_loader = Fileloader.new()
 onready var tilemap_objetos = get_node("principal/TileMap/objects")
 
 var dinoSelected = -1
 		
 func _ready():
-	var intro = load("res://scenes/PopupIntro.tscn")
-	get_node("popups").call_deferred("add_child", intro.instance())
+	print (global.dinos_fixed)
+	global.reload= false
+	file_loader.parseFile()
+	var level=file_loader.getLevelMatrix()
+	print (file_loader.getLevelDinor())
+	dinoRight = int(file_loader.getLevelDinor())
+	dinoLeft = int(file_loader.getLevelDinol())
+	dinoFront = int(file_loader.getLevelDinod()	)
+	dinoBack = int(file_loader.getLevelDinou()	)
+	if (global.level_selected==1):
+		var intro = load("res://scenes/PopupIntro.tscn")
+		get_node("popups").call_deferred("add_child", intro.instance())
 	
 	set_process(true)
 
 func _process(delta):
+	if global.reload:
+		print ("ALGOOOO")
+		global.level_selected=global.level_selected+1
+		_ready()
 	if Input.is_key_pressed(KEY_ESCAPE):
       get_tree().change_scene("res://scenes/MainMenu.tscn")
 	
@@ -100,8 +115,11 @@ func retry():
 
 func win():
 	global.modo_play = false
+	global.reload= true
+	global.dinos_fixed = {}
 	var win = load("res://scenes/PopupWin.tscn")
 	get_node("popups").call_deferred("add_child", win.instance())
+	
 
 func _on_dinoFront_toggled( button_pressed ):
 	if button_pressed:

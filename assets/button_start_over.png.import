@@ -7,10 +7,7 @@ path="res://.import/button_start_over.png-deb8eeb8335f2822f0e3dc296e897a2b.stex"
 [deps]
 
 source_file="res://assets/button_start_over.png"
-source_md5="ed99859e30bc2b353d8f04c10fb0f982"
-
 dest_files=[ "res://.import/button_start_over.png-deb8eeb8335f2822f0e3dc296e897a2b.stex" ]
-dest_md5="0c231a583c567833af5b1f672fc629dd"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/texture_dino-left.png-c10f6b82c4ea5aec06670e1b5ec61414.stex"
 [deps]
 
 source_file="res://assets/texture_dino-left.png"
-source_md5="323c3fc6594bfb8ce00099a056d9e311"
-
 dest_files=[ "res://.import/texture_dino-left.png-c10f6b82c4ea5aec06670e1b5ec61414.stex" ]
-dest_md5="ed7af7091340268960b8b0b830315f4b"
 
 [params]
 

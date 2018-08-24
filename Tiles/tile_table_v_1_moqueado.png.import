@@ -7,10 +7,7 @@ path="res://.import/tile_table_v_1_moqueado.png-b629fa21b1cc16c41198dd5c95ab4ac5
 [deps]
 
 source_file="res://Tiles/tile_table_v_1_moqueado.png"
-source_md5="19451180a51b0894ec15939ae778ec65"
-
 dest_files=[ "res://.import/tile_table_v_1_moqueado.png-b629fa21b1cc16c41198dd5c95ab4ac5.stex" ]
-dest_md5="7bbcd57fc397f9b682f6c57e4567cb9d"
 
 [params]
 

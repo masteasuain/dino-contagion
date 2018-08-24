@@ -7,7 +7,9 @@ func _ready():
 
 
 func _on_FXClick_finished():
-	get_tree().change_scene("res://scenes/MainMenu.tscn")
+	get_tree().change_scene("res://scenes/game.tscn")
+
+	#get_tree().change_scene("res://scenes/game.tscn")
 	pass 
 
 

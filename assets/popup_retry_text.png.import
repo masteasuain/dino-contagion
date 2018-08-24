@@ -7,10 +7,7 @@ path="res://.import/popup_retry_text.png-a6588f78483501ca94bbc8334a09aebb.stex"
 [deps]
 
 source_file="res://assets/popup_retry_text.png"
-source_md5="c5d13435072c704d018385efbc461367"
-
 dest_files=[ "res://.import/popup_retry_text.png-a6588f78483501ca94bbc8334a09aebb.stex" ]
-dest_md5="5dbf00847383cf49adf9eefd44934aad"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/popup_settings_postit.png-e3842cbaf325e386b92a3fbceeee283a.s
 [deps]
 
 source_file="res://assets/popup_settings_postit.png"
-source_md5="a342acafb9fd978f3509015cc9f285d8"
-
 dest_files=[ "res://.import/popup_settings_postit.png-e3842cbaf325e386b92a3fbceeee283a.stex" ]
-dest_md5="ec7831848c3930a56b36afbe34d0c880"
 
 [params]
 

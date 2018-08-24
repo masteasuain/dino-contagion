@@ -7,10 +7,7 @@ path="res://.import/gui-start-contagion-over.png-6f2f8127cedf8d7488ad29aee3dd0bc
 [deps]
 
 source_file="res://assets/gui-start-contagion-over.png"
-source_md5="b471651d7e48115931fcbcfdef5d1a7d"
-
 dest_files=[ "res://.import/gui-start-contagion-over.png-6f2f8127cedf8d7488ad29aee3dd0bcd.stex" ]
-dest_md5="e5fe175d3ee6c74828847e0e9387b90f"
 
 [params]
 

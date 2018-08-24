@@ -10,7 +10,7 @@
 [ext_resource path="res://audio/sick_sneeze_1.wav" type="AudioStream" id=8]
 [ext_resource path="res://assets/godot-moco-anim.png" type="Texture" id=9]
 
-[node name="dino" type="Node2D" groups=[
+[node name="dino" type="Node2D" index="0" groups=[
 "dino",
 ]]
 
@@ -24,6 +24,7 @@ texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
+editor/display_folded = true
 position = Vector2( -1.12691, 0.0592464 )
 texture = ExtResource( 3 )
 offset = Vector2( 60, -135 )
@@ -52,13 +53,14 @@ visible = false
 position = Vector2( 96.9396, -161.843 )
 scale = Vector2( 1.1, 0.8 )
 texture = ExtResource( 7 )
-offset = Vector2( 3.05081e-05, 50.0078 )
+offset = Vector2( 3.05081e-005, 50.0078 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="FX sneeze" type="AudioStreamPlayer" parent="Sprite" index="2"]
 
 stream = ExtResource( 8 )
 volume_db = -2.0
+pitch_scale = 1.0
 autoplay = false
 mix_target = 2
 bus = "Master"

@@ -3,6 +3,7 @@ extends Node2D
 var curtgt = Vector2() #to be parsed
 var grid = {}
 
+#Draw a selected Square around a cell
 func _ready():
 	set_physics_process(true)
 

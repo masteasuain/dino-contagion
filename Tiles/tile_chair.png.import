@@ -7,10 +7,7 @@ path="res://.import/tile_chair.png-0fd803c4b328d1a8f8bc14df1b3188a5.stex"
 [deps]
 
 source_file="res://Tiles/tile_chair.png"
-source_md5="8c711ac46d62a42423f982666b131c0f"
-
 dest_files=[ "res://.import/tile_chair.png-0fd803c4b328d1a8f8bc14df1b3188a5.stex" ]
-dest_md5="ed7d8be93098c0c7a9256bfbfb0db3c6"
 
 [params]
 

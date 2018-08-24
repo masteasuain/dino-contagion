@@ -7,10 +7,7 @@ path="res://.import/musica_intro.wav-698a948d8b3012b6a44e3b21666b38f8.sample"
 [deps]
 
 source_file="res://audio/musica_intro.wav"
-source_md5="052dac4947b48fbb020eecac21524fed"
-
 dest_files=[ "res://.import/musica_intro.wav-698a948d8b3012b6a44e3b21666b38f8.sample" ]
-dest_md5="6be183148f4b03a23331f220e8da870f"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/pebbles.png-c5ed3c369e3e6ce479c96ce304d3d586.stex"
 [deps]
 
 source_file="res://Tiles/pebbles.png"
-source_md5="3b1faeaed7795c25f6ea73818e2c0d27"
-
 dest_files=[ "res://.import/pebbles.png-c5ed3c369e3e6ce479c96ce304d3d586.stex" ]
-dest_md5="1db57dbd7b7456f677a624b09d0a36ec"
 
 [params]
 

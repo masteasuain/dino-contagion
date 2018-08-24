@@ -7,10 +7,7 @@ path="res://.import/button_settings_over.png-cbb4015d91662f95851abbab92f2b549.st
 [deps]
 
 source_file="res://assets/button_settings_over.png"
-source_md5="160a6b617da07ae58277b6b1a2c19184"
-
 dest_files=[ "res://.import/button_settings_over.png-cbb4015d91662f95851abbab92f2b549.stex" ]
-dest_md5="f930ea25c2860eff1169f2ac38af836e"
 
 [params]
 

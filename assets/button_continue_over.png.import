@@ -7,10 +7,7 @@ path="res://.import/button_continue_over.png-6442ba05a2894547e93354b92f2793ff.st
 [deps]
 
 source_file="res://assets/button_continue_over.png"
-source_md5="62285cc1be34446e3566b76bb8dc95ad"
-
 dest_files=[ "res://.import/button_continue_over.png-6442ba05a2894547e93354b92f2793ff.stex" ]
-dest_md5="08fecced8da29030fc93b4f33b66cf27"
 
 [params]
 

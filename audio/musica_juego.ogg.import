@@ -7,10 +7,7 @@ path="res://.import/musica_juego.ogg-2ddbf3863f3fe5e3a7aa4d793aebb6a7.oggstr"
 [deps]
 
 source_file="res://audio/musica_juego.ogg"
-source_md5="635b87d323f9eff5cd6610b25991b56f"
-
 dest_files=[ "res://.import/musica_juego.ogg-2ddbf3863f3fe5e3a7aa4d793aebb6a7.oggstr" ]
-dest_md5="18dede04e1b4035a50fe6b5e79f923a2"
 
 [params]
 

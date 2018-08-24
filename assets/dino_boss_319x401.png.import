@@ -7,10 +7,7 @@ path="res://.import/dino_boss_319x401.png-8ebae56689f1c7e002577c1414e51053.stex"
 [deps]
 
 source_file="res://assets/dino_boss_319x401.png"
-source_md5="b616ed71817fed08d1d1479ec436ca38"
-
 dest_files=[ "res://.import/dino_boss_319x401.png-8ebae56689f1c7e002577c1414e51053.stex" ]
-dest_md5="c1ee156741984d632fe2bc4bd91c31cc"
 
 [params]
 

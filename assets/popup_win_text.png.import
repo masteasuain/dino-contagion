@@ -7,10 +7,7 @@ path="res://.import/popup_win_text.png-9faf638622cece19af96c768fc6ae40f.stex"
 [deps]
 
 source_file="res://assets/popup_win_text.png"
-source_md5="54d9e0657147bc8a0bee2b6faeb88faa"
-
 dest_files=[ "res://.import/popup_win_text.png-9faf638622cece19af96c768fc6ae40f.stex" ]
-dest_md5="cddb4ef62dfbbe3bbdf2e45f5724d599"
 
 [params]
 

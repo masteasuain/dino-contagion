@@ -7,10 +7,7 @@ path="res://.import/gui-dino-select-right-disabled.png-50545782aa647c65464f96880
 [deps]
 
 source_file="res://assets/gui-dino-select-right-disabled.png"
-source_md5="1ed2a7669929e82e1599c3429afb2f20"
-
 dest_files=[ "res://.import/gui-dino-select-right-disabled.png-50545782aa647c65464f9688099f4dc4.stex" ]
-dest_md5="64fb6ef60eaf468aca57fc67d25c227a"
 
 [params]
 

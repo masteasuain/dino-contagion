@@ -7,10 +7,7 @@ path="res://.import/tile_corner_left.png-689db3a3b5a3e05d329f1b783e04f250.stex"
 [deps]
 
 source_file="res://Tiles/tile_corner_left.png"
-source_md5="5c696a75ede45d326099b27a2944abd7"
-
 dest_files=[ "res://.import/tile_corner_left.png-689db3a3b5a3e05d329f1b783e04f250.stex" ]
-dest_md5="ec31976639851275e16414259c26ab1f"
 
 [params]
 

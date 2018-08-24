@@ -7,10 +7,7 @@ path="res://.import/popup_settings_slider_tick.png-d752b59351e6e6067975727257644
 [deps]
 
 source_file="res://assets/popup_settings_slider_tick.png"
-source_md5="befb5956ba0b57fab25e7e6d8d92bc2d"
-
 dest_files=[ "res://.import/popup_settings_slider_tick.png-d752b59351e6e606797572725764492d.stex" ]
-dest_md5="57e1e0dba74c97691ede795371962335"
 
 [params]
 

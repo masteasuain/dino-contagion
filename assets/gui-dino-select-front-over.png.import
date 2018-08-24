@@ -7,10 +7,7 @@ path="res://.import/gui-dino-select-front-over.png-2d7bfc37bdbbdc8b152832e52ff7f
 [deps]
 
 source_file="res://assets/gui-dino-select-front-over.png"
-source_md5="e8e4d50490eecc512c089eb8733e8538"
-
 dest_files=[ "res://.import/gui-dino-select-front-over.png-2d7bfc37bdbbdc8b152832e52ff7f7f1.stex" ]
-dest_md5="40915ac363a0b11489d4e87ed64473b1"
 
 [params]
 
