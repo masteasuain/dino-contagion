@@ -20,7 +20,8 @@
 [ext_resource path="res://audio/start.wav" type="AudioStream" id=18]
 [ext_resource path="res://audio/loop_intro.wav" type="AudioStream" id=19]
 
-[node name="Background" type="TextureRect" index="0"]
+[node name="Background" type="TextureRect"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -39,6 +40,7 @@ script = ExtResource( 2 )
 _sections_unfolded = [ "Material", "Visibility" ]
 
 [node name="Logo-super" type="TextureRect" parent="." index="0"]
+
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
@@ -60,6 +62,7 @@ stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
 
 [node name="Logo-boss" type="TextureRect" parent="." index="1"]
+
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
@@ -81,6 +84,7 @@ stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
 
 [node name="Logo-edition" type="TextureRect" parent="." index="2"]
+
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
@@ -102,6 +106,7 @@ stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
 
 [node name="Logo-dino" type="TextureRect" parent="." index="3"]
+
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
@@ -123,6 +128,7 @@ stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
 
 [node name="Logo-contagion" type="TextureRect" parent="." index="4"]
+
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
@@ -144,6 +150,7 @@ stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
 
 [node name="Start" type="TextureButton" parent="." index="5"]
+
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -170,6 +177,7 @@ texture_hover = ExtResource( 9 )
 _sections_unfolded = [ "Mouse", "Rect", "Textures" ]
 
 [node name="Settings" type="TextureButton" parent="." index="6"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -196,6 +204,7 @@ texture_hover = ExtResource( 11 )
 _sections_unfolded = [ "Mouse", "Rect", "Textures" ]
 
 [node name="Close" type="TextureButton" parent="." index="7"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -221,6 +230,7 @@ texture_hover = ExtResource( 13 )
 _sections_unfolded = [ "Mouse", "Rect", "Textures" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="8"]
+
 root_node = NodePath("..")
 autoplay = "Intro"
 playback_process_mode = 1
@@ -230,6 +240,7 @@ anims/Intro = ExtResource( 14 )
 blend_times = [  ]
 
 [node name="FX-Title" type="AudioStreamPlayer" parent="." index="9"]
+
 stream = ExtResource( 15 )
 volume_db = 0.0
 pitch_scale = 1.0
@@ -238,6 +249,7 @@ mix_target = 0
 bus = "Master"
 
 [node name="FX-Super" type="AudioStreamPlayer" parent="." index="10"]
+
 stream = ExtResource( 16 )
 volume_db = 0.0
 pitch_scale = 1.0
@@ -246,6 +258,7 @@ mix_target = 0
 bus = "Master"
 
 [node name="FX-Click" type="AudioStreamPlayer" parent="." index="11"]
+
 stream = ExtResource( 17 )
 volume_db = 0.0
 pitch_scale = 1.0
@@ -254,6 +267,7 @@ mix_target = 0
 bus = "Master"
 
 [node name="FX-Start" type="AudioStreamPlayer" parent="." index="12"]
+
 stream = ExtResource( 18 )
 volume_db = 0.0
 pitch_scale = 1.0
@@ -262,6 +276,7 @@ mix_target = 0
 bus = "Master"
 
 [node name="Musiquita" type="AudioStreamPlayer" parent="." index="13"]
+
 stream = ExtResource( 19 )
 volume_db = 0.0
 pitch_scale = 1.0
@@ -272,6 +287,11 @@ bus = "Master"
 [node name="popups" type="Node2D" parent="." index="14"]
 
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+
 [connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
+
 [connection signal="pressed" from="Close" to="." method="_on_Close_pressed"]
+
 [connection signal="finished" from="FX-Start" to="." method="_on_FXStart_finished"]
+
+

@@ -16,6 +16,7 @@ func _ready():
 
 
 func _on_Button_pressed(target):
+	$ButtonPressed.play()
 	print("which button = "+target.name.substr(6,2))
 	global.level_selected = int(target.name.substr(6,2))
 	get_tree().change_scene("res://scenes/game.tscn")

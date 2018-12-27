@@ -17,6 +17,7 @@ onready var tilemap_objetos = get_node("principal/TileMap/objects")
 var dinoSelected = -1
 		
 func _ready():
+	
 	print (global.dinos_fixed)
 	global.reload= false
 	file_loader.parseFile()
