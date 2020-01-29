@@ -14,143 +14,79 @@
 [ext_resource path="res://assets/button_close.png" type="Texture" id=12]
 [ext_resource path="res://assets/button_close_over.png" type="Texture" id=13]
 [ext_resource path="res://animations/Intro_anim.tres" type="Animation" id=14]
-[ext_resource path="res://audio/Dino Contagion Boss Edition.wav" type="AudioStream" id=15]
-[ext_resource path="res://audio/Super.wav" type="AudioStream" id=16]
-[ext_resource path="res://audio/click.wav" type="AudioStream" id=17]
-[ext_resource path="res://audio/start.wav" type="AudioStream" id=18]
-[ext_resource path="res://audio/loop_intro.wav" type="AudioStream" id=19]
+[ext_resource path="res://audioogg/start.ogg" type="AudioStream" id=15]
+[ext_resource path="res://audioogg/Super.ogg" type="AudioStream" id=16]
+[ext_resource path="res://audioogg/click.ogg" type="AudioStream" id=17]
+[ext_resource path="res://audioogg/Dino Contagion Boss Edition.ogg" type="AudioStream" id=18]
+[ext_resource path="res://audioogg/loop_intro.ogg" type="AudioStream" id=19]
 
 [node name="Background" type="TextureRect"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 1920.0
 margin_bottom = 1080.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 1 )
-stretch_mode = 0
 script = ExtResource( 2 )
-_sections_unfolded = [ "Material", "Visibility" ]
 
-[node name="Logo-super" type="TextureRect" parent="." index="0"]
-
+[node name="Logo-super" type="TextureRect" parent="."]
 anchor_left = 0.5
-anchor_top = 0.0
 anchor_right = 0.5
-anchor_bottom = 0.0
 margin_left = -236.0
 margin_top = 50.0
 margin_right = 188.0
 margin_bottom = 360.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 216, 230 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 3 )
 expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
 
-[node name="Logo-boss" type="TextureRect" parent="." index="1"]
-
+[node name="Logo-boss" type="TextureRect" parent="."]
 anchor_left = 0.5
-anchor_top = 0.0
 anchor_right = 0.5
-anchor_bottom = 0.0
 margin_left = -504.0
 margin_top = 332.0
 margin_right = -168.0
 margin_bottom = 473.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 252.555, 71.0832 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 4 )
 expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
 
-[node name="Logo-edition" type="TextureRect" parent="." index="2"]
-
+[node name="Logo-edition" type="TextureRect" parent="."]
 anchor_left = 0.5
-anchor_top = 0.0
 anchor_right = 0.5
-anchor_bottom = 0.0
 margin_left = -184.0
 margin_top = 345.0
 margin_right = 304.0
 margin_bottom = 493.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 163.811, 71.3083 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 5 )
 expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
 
-[node name="Logo-dino" type="TextureRect" parent="." index="3"]
-
+[node name="Logo-dino" type="TextureRect" parent="."]
 anchor_left = 0.5
-anchor_top = 0.0
 anchor_right = 0.5
-anchor_bottom = 0.0
 margin_left = -570.0
 margin_top = 174.0
 margin_right = -170.0
 margin_bottom = 368.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 200, 96 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 6 )
 expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
 
-[node name="Logo-contagion" type="TextureRect" parent="." index="4"]
-
+[node name="Logo-contagion" type="TextureRect" parent="."]
 anchor_left = 0.5
-anchor_top = 0.0
 anchor_right = 0.5
-anchor_bottom = 0.0
 margin_left = -161.0
 margin_top = 166.0
 margin_right = 569.0
 margin_bottom = 395.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 311, 104 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 7 )
 expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
 
-[node name="Start" type="TextureButton" parent="." index="5"]
-
+[node name="Start" type="TextureButton" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -159,139 +95,57 @@ margin_left = -231.5
 margin_top = -195.0
 margin_right = 228.5
 margin_bottom = 5.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 240, 100 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 texture_hover = ExtResource( 9 )
-_sections_unfolded = [ "Mouse", "Rect", "Textures" ]
 
-[node name="Settings" type="TextureButton" parent="." index="6"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Settings" type="TextureButton" parent="."]
 margin_left = 1740.0
 margin_top = 914.0
 margin_right = 1920.0
 margin_bottom = 1081.0
-rect_scale = Vector2( 0, 0 )
+rect_scale = Vector2( 1e-05, 1e-05 )
 rect_pivot_offset = Vector2( 88.549, 79.5392 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 11 )
 texture_hover = ExtResource( 11 )
-_sections_unfolded = [ "Mouse", "Rect", "Textures" ]
 
-[node name="Close" type="TextureButton" parent="." index="7"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Close" type="TextureButton" parent="."]
 margin_left = 1740.0
 margin_top = 4.0
 margin_right = 1920.0
 margin_bottom = 183.0
 rect_pivot_offset = Vector2( 88.549, 79.5392 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 texture_normal = ExtResource( 12 )
 texture_pressed = ExtResource( 13 )
 texture_hover = ExtResource( 13 )
-_sections_unfolded = [ "Mouse", "Rect", "Textures" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="8"]
-
-root_node = NodePath("..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Intro"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/Intro = ExtResource( 14 )
-blend_times = [  ]
 
-[node name="FX-Title" type="AudioStreamPlayer" parent="." index="9"]
-
-stream = ExtResource( 15 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="FX-Super" type="AudioStreamPlayer" parent="." index="10"]
-
-stream = ExtResource( 16 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="FX-Click" type="AudioStreamPlayer" parent="." index="11"]
-
-stream = ExtResource( 17 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="FX-Start" type="AudioStreamPlayer" parent="." index="12"]
-
+[node name="FX-Title" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="Musiquita" type="AudioStreamPlayer" parent="." index="13"]
+[node name="FX-Super" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
 
+[node name="FX-Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+
+[node name="FX-Start" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+
+[node name="Musiquita" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="popups" type="Node2D" parent="." index="14"]
-
+[node name="popups" type="Node2D" parent="."]
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
-
 [connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
-
 [connection signal="pressed" from="Close" to="." method="_on_Close_pressed"]
-
 [connection signal="finished" from="FX-Start" to="." method="_on_FXStart_finished"]
-
-

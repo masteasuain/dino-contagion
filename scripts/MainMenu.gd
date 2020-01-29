@@ -2,11 +2,11 @@ extends TextureRect
 
 
 func _ready():
-    set_process(true)
+	set_process(true)
 
 func _process(delta):
-   if Input.is_key_pressed(KEY_ESCAPE):
-      get_tree().quit()
+	if Input.is_key_pressed(KEY_ESCAPE):
+	  get_tree().quit()
 
 func _on_Start_pressed():
 	get_node("Musiquita").stop()

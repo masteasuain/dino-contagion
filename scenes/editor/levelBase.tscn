@@ -6,85 +6,34 @@
 [ext_resource path="res://scripts/TileMapMoco.gd" type="Script" id=4]
 [ext_resource path="res://scenes/editor/EditorObjects.gd" type="Script" id=5]
 
-[node name="Node2D" type="Node2D" index="0"]
-
+[node name="Node2D" type="Node2D"]
 position = Vector2( 619.478, 486.038 )
 scale = Vector2( 0.324037, 0.324037 )
-_sections_unfolded = [ "Limit", "Smoothing", "Transform", "Visibility" ]
 
-[node name="TileMap" type="TileMap" parent="." index="0"]
-
+[node name="TileMap" type="TileMap" parent="."]
 position = Vector2( -438.819, -896.509 )
-mode = 0
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 300, 300 )
-cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -65538, 36, 0, -65537, 40, 0, -131072, 40, 0, -131071, 40, 0, -131070, 40, 0, -131069, 40, 0, -131068, 40, 0, -131067, 40, 0, -131066, 40, 0, -131065, 40, 0, -131064, 40, 0, -131063, 40, 0, -131062, 40, 0, -131061, 37, 0, -2, 38, 0, -1, 7, 0, -65536, 7, 0, -65535, 7, 0, -65534, 7, 0, -65533, 7, 0, -65532, 7, 0, -65531, 7, 0, -65530, 7, 0, -65529, 7, 0, -65528, 7, 0, -65527, 7, 0, -65526, 7, 0, -65525, 39, 0, 65534, 38, 0, 65535, 7, 0, 0, 7, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 7, 0, 10, 7, 0, 11, 39, 0, 131070, 38, 0, 131071, 7, 0, 65536, 7, 0, 65537, 7, 0, 65538, 7, 0, 65539, 7, 0, 65540, 7, 0, 65541, 7, 0, 65542, 7, 0, 65543, 7, 0, 65544, 7, 0, 65545, 7, 0, 65546, 7, 0, 65547, 39, 0, 196606, 38, 0, 196607, 7, 0, 131072, 7, 0, 131073, 7, 0, 131074, 7, 0, 131075, 7, 0, 131076, 7, 0, 131077, 7, 0, 131078, 7, 0, 131079, 7, 0, 131080, 7, 0, 131081, 7, 0, 131082, 7, 0, 131083, 39, 0, 262142, 38, 0, 262143, 7, 0, 196608, 7, 0, 196609, 7, 0, 196610, 7, 0, 196611, 7, 0, 196612, 7, 0, 196613, 7, 0, 196614, 7, 0, 196615, 7, 0, 196616, 7, 0, 196617, 7, 0, 196618, 7, 0, 196619, 39, 0, 327678, 38, 0, 327679, 7, 0, 262144, 7, 0, 262145, 7, 0, 262146, 7, 0, 262147, 7, 0, 262148, 7, 0, 262149, 7, 0, 262150, 7, 0, 262151, 7, 0, 262152, 7, 0, 262153, 7, 0, 262154, 7, 0, 262155, 39, 0, 393214, 38, 0, 393215, 7, 0, 327680, 7, 0, 327681, 7, 0, 327682, 7, 0, 327683, 7, 0, 327684, 7, 0, 327685, 7, 0, 327686, 7, 0, 327687, 7, 0, 327688, 7, 0, 327689, 7, 0, 327690, 7, 0, 327691, 39, 0, 458750, 38, 0, 458751, 7, 0, 393216, 7, 0, 393217, 7, 0, 393218, 7, 0, 393219, 7, 0, 393220, 7, 0, 393221, 7, 0, 393222, 7, 0, 393223, 7, 0, 393224, 7, 0, 393225, 7, 0, 393226, 7, 0, 393227, 39, 0, 524286, 38, 0, 524287, 7, 0, 458752, 7, 0, 458753, 7, 0, 458754, 7, 0, 458755, 7, 0, 458756, 7, 0, 458757, 7, 0, 458758, 7, 0, 458759, 7, 0, 458760, 7, 0, 458761, 7, 0, 458762, 7, 0, 458763, 39, 0, 589822, 38, 0, 589823, 7, 0, 524288, 7, 0, 524289, 7, 0, 524290, 7, 0, 524291, 7, 0, 524292, 7, 0, 524293, 7, 0, 524294, 7, 0, 524295, 7, 0, 524296, 7, 0, 524297, 7, 0, 524298, 7, 0, 524299, 39, 0, 655358, 40, 0, 655359, 40, 0, 589824, 40, 0, 589825, 40, 0, 589826, 40, 0, 589827, 40, 0, 589828, 40, 0, 589829, 40, 0, 589830, 40, 0, 589831, 40, 0, 589832, 40, 0, 589833, 40, 0, 589834, 40, 0, 589835, 40, 0 )
 script = ExtResource( 2 )
-_sections_unfolded = [ "Cell", "Collision", "Transform" ]
 
-[node name="draw" type="Node2D" parent="TileMap" index="0" groups=[
+[node name="draw" type="Node2D" parent="TileMap" groups=[
 "draw",
 ]]
-
 script = ExtResource( 3 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="moco" type="TileMap" parent="TileMap" index="1"]
-
-mode = 0
-tile_set = null
-cell_size = Vector2( 64, 64 )
-cell_quadrant_size = 16
+[node name="moco" type="TileMap" parent="TileMap"]
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray(  )
 script = ExtResource( 4 )
 
-[node name="objects" type="TileMap" parent="TileMap" index="2" groups=[
+[node name="objects" type="TileMap" parent="TileMap" groups=[
 "objects",
 ]]
-
-mode = 0
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 300, 300 )
-cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray(  )
 script = ExtResource( 5 )
-_sections_unfolded = [ "Cell", "Collision" ]
-
-

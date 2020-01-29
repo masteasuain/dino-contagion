@@ -6,73 +6,31 @@
 [ext_resource path="res://scripts/TileMapMoco.gd" type="Script" id=4]
 [ext_resource path="res://scripts/Draw.gd" type="Script" id=5]
 
-[node name="TileMap" type="TileMap" index="0"]
-mode = 0
+[node name="TileMap" type="TileMap"]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 300, 300 )
-cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray(  )
 script = ExtResource( 2 )
-_sections_unfolded = [ "Cell", "Material", "Transform", "Visibility" ]
 
-[node name="objects" type="TileMap" parent="." index="0" groups=[
+[node name="objects" type="TileMap" parent="." groups=[
 "objects",
 ]]
-mode = 0
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 300, 300 )
-cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
 cell_y_sort = true
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray(  )
 script = ExtResource( 3 )
-_sections_unfolded = [ "Cell", "Collision", "Material", "Occluder", "Transform", "Visibility" ]
 
-[node name="moco" type="TileMap" parent="." index="1"]
-mode = 0
+[node name="moco" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 300, 300 )
-cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray(  )
 script = ExtResource( 4 )
-_sections_unfolded = [ "Cell", "Collision", "Transform", "Z Index" ]
 
-[node name="draw" type="Node2D" parent="." index="2" groups=[
+[node name="draw" type="Node2D" parent="." groups=[
 "draw",
 ]]
 script = ExtResource( 5 )
-

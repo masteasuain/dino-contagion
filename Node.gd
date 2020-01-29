@@ -7,7 +7,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for button in get_tree().get_nodes_in_group("buttons"):
-    	button.connect("pressed", self, "_on_Button_pressed", [button])	
+		button.connect("pressed", self, "_on_Button_pressed", [button])	
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

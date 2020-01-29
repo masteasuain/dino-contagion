@@ -7,24 +7,20 @@
 [ext_resource path="res://animations/Dino_right_ill.tres" type="Animation" id=5]
 [ext_resource path="res://animations/Dino_right_sneeze.tres" type="Animation" id=6]
 [ext_resource path="res://assets/godot-moco-gota.png" type="Texture" id=7]
-[ext_resource path="res://audio/sick_sneeze_1.wav" type="AudioStream" id=8]
+[ext_resource path="res://audioogg/sick_sneeze_1.ogg" type="AudioStream" id=8]
 [ext_resource path="res://assets/godot-moco-anim.png" type="Texture" id=9]
 
 [node name="dino" type="Node2D" groups=[
 "dino",
 ]]
-
 scale = Vector2( -1, 1 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Animation", "Offset", "Transform" ]
 
-[node name="Sombrita" type="Sprite" parent="." index="0"]
-
+[node name="Sombrita" type="Sprite" parent="."]
 position = Vector2( -1.12701, 0.0589905 )
 texture = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
-
+[node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -1.12691, 0.0592464 )
 scale = Vector2( 0.9875, 1.00125 )
 texture = ExtResource( 3 )
@@ -32,49 +28,31 @@ offset = Vector2( 60, -135 )
 vframes = 2
 hframes = 3
 frame = 4
-_sections_unfolded = [ "Animation", "Material", "Offset", "Visibility" ]
 
-[node name="Anim" type="AnimationPlayer" parent="Sprite" index="0"]
-
-root_node = NodePath("..")
+[node name="Anim" type="AnimationPlayer" parent="Sprite"]
 autoplay = "idle"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/idle = ExtResource( 4 )
 anims/ill = ExtResource( 5 )
 anims/sneeze = ExtResource( 6 )
 next/ill = "Dino_sneeze"
 next/sneeze = "ill"
-blend_times = [  ]
-_sections_unfolded = [ "Playback Options" ]
 
-[node name="Moquito" type="Sprite" parent="Sprite" index="1"]
-
+[node name="Moquito" type="Sprite" parent="Sprite"]
 visible = false
 position = Vector2( 96.9396, -161.843 )
 scale = Vector2( 1.0024, 0.995191 )
 texture = ExtResource( 7 )
 offset = Vector2( 3.05081e-05, 50.0078 )
-_sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="FX sneeze" type="AudioStreamPlayer" parent="Sprite" index="2"]
-
+[node name="FX sneeze" type="AudioStreamPlayer" parent="Sprite"]
 stream = ExtResource( 8 )
 volume_db = -2.0
-autoplay = false
 mix_target = 2
-bus = "Master"
-_sections_unfolded = [ "Pause" ]
 
-[node name="Estornudo" type="Sprite" parent="." index="2"]
-
+[node name="Estornudo" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.333333 )
 position = Vector2( 258.792, -119.96 )
 texture = ExtResource( 9 )
 offset = Vector2( 110, 0 )
 hframes = 5
 frame = 4
-_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z Index" ]
-
-

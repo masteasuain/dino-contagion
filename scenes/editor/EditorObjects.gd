@@ -26,7 +26,7 @@ func _ready():
 	
 
 func ubicarDino(tile, scene):
-	
+	print ("ubicarDino")
 	self.set_cellv(tile,-1)
 	var dinoScene = load(scene)
 	var dino = dinoScene.instance()		
@@ -38,6 +38,7 @@ func ubicarDino(tile, scene):
 
 	
 func placeTiles(elementos, columnas, filas):
+	print ("placeTiles")
 	var index=0
 	var tile=0
 	

@@ -32,6 +32,35 @@ func _on_dinoFront_toggled( button_pressed ):
 	print("selected DinoFront")
 	get_node("UI/SFX_click").play()
 	pass
+func _on_dinoLeeft_toggled( button_pressed ):
+	if button_pressed:
+		dinoSelected = 1
+	else:
+		dinoSelected = -1
+		
+	print("selected DinoFront")
+	get_node("UI/SFX_click").play()
+	pass
+	
+func _on_dinRigth_toggled( button_pressed ):
+	if button_pressed:
+		dinoSelected = 2
+	else:
+		dinoSelected = -1
+		
+	print("selected DinoFront")
+	get_node("UI/SFX_click").play()
+	pass	
+func _on_dinBack_toggled( button_pressed ):
+	if button_pressed:
+		dinoSelected = 3
+	else:
+		dinoSelected = -1
+		
+	print("selected DinoFront")
+	get_node("UI/SFX_click").play()
+	pass	
+
 
 func _input(event):
 	if event.is_action_released("left_click"):
@@ -43,6 +72,34 @@ func _input(event):
 					if dinoSelected == 0:
 						tilemap_objetos.ubicarDino(tile, "res://scenes/DinoFront.tscn")
 						get_node("UI/SFX_click").play()
+					if dinoSelected == 1:
+						tilemap_objetos.ubicarDino(tile, "res://scenes/DinoLeft.tscn")
+						get_node("UI/SFX_click").play()
+					if dinoSelected == 2:
+						tilemap_objetos.ubicarDino(tile, "res://scenes/DinoRight.tscn")
+						get_node("UI/SFX_click").play()
+					if dinoSelected == 3:
+						tilemap_objetos.ubicarDino(tile, "res://scenes/DinoBack.tscn")
+						get_node("UI/SFX_click").play()															
+					if dinoSelected == 4:
+						tilemap_objetos.ubicarDino(tile, "res://scenes/DinoFirst.tscn")
+						get_node("UI/SFX_click").play()									
 
 func posicionValida(tile):
 	return (tile.y <= global.ROWS and tile.y >= 0) and (tile.x <= global.COLUMNS and tile.x >= -1)
+
+
+func _on_post_it_toggled(button_pressed):
+	pass # Replace with function body.
+
+
+func _on_dinoMain_toggled(button_pressed):
+	if button_pressed:
+		dinoSelected = 4
+	else:
+		dinoSelected = -1
+		
+	print("selected DinoFront")
+	get_node("UI/SFX_click").play()
+	pass		
+	pass # Replace with function body.

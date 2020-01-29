@@ -39,7 +39,7 @@ func _process(delta):
 		global.level_selected=global.level_selected+1
 		_ready()
 	if Input.is_key_pressed(KEY_ESCAPE):
-      get_tree().change_scene("res://scenes/MainMenu.tscn")
+	  get_tree().change_scene("res://scenes/MainMenu.tscn")
 	
 	if global.modo_play:
 		mocos = get_tree().get_nodes_in_group("moco").size()
