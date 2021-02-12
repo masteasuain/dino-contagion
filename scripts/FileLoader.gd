@@ -22,10 +22,11 @@ func _ready():
 func parseFile():
 	file_path = 'res://Maps/'+str(global.level_selected)+'.dino' 
 	file = File.new()
-	file.open(file_path,File.READ)
-	levelName=readLevelName()
-	matrixData=readLevel()
-	
+	var doFileExists = file.file_exists(file_path)
+	if doFileExists:
+		file.open(file_path,File.READ)
+		levelName=readLevelName()
+		matrixData=readLevel()
 func readLevelName():
 	var linea=file.get_line() #sets the file read cursor to the next line
 	linea =linea.split(",")

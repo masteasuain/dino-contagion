@@ -39,6 +39,8 @@ func _process(delta):
 	if global.reload:
 		print ("ALGOOOO")
 		global.level_selected=global.level_selected+1
+		if global.level_selected>5:
+			get_tree().change_scene("res://scenes/MainMenu.tscn")
 		_ready()
 	if Input.is_key_pressed(KEY_ESCAPE):
 	  get_tree().change_scene("res://scenes/MainMenu.tscn")
