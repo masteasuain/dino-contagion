@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Node.gd" type="Script" id=1]
 [ext_resource path="res://Tiles/fondo_selector_niveles.jpg" type="Texture" id=2]
 [ext_resource path="res://Tiles/boton_1.png" type="Texture" id=3]
 [ext_resource path="res://Tiles/boton_2.png" type="Texture" id=4]
 [ext_resource path="res://audioogg/elevator-button-press.ogg" type="AudioStream" id=5]
+[ext_resource path="res://fonts/Arial_dynamic.tres" type="DynamicFont" id=6]
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -17,10 +18,10 @@ texture = ExtResource( 2 )
 [node name="Button1" type="TextureButton" parent="." groups=[
 "buttons",
 ]]
-margin_left = 210.0
-margin_top = 70.0
-margin_right = 585.0
-margin_bottom = 445.0
+margin_left = 286.328
+margin_top = 195.716
+margin_right = 661.328
+margin_bottom = 570.716
 rect_scale = Vector2( 0.7, 0.7 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
@@ -39,10 +40,10 @@ __meta__ = {
 [node name="Button2" type="TextureButton" parent="." groups=[
 "buttons",
 ]]
-margin_left = 520.0
-margin_top = 70.0
-margin_right = 895.0
-margin_bottom = 445.0
+margin_left = 793.881
+margin_top = 204.695
+margin_right = 1168.88
+margin_bottom = 579.696
 rect_scale = Vector2( 0.7, 0.7 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
@@ -61,13 +62,16 @@ __meta__ = {
 [node name="Button3" type="TextureButton" parent="." groups=[
 "buttons",
 ]]
-margin_left = 850.0
-margin_top = 70.0
-margin_right = 1225.0
-margin_bottom = 445.0
+margin_left = 1298.68
+margin_top = 199.491
+margin_right = 1673.68
+margin_bottom = 573.491
 rect_scale = Vector2( 0.7, 0.7 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="Button3"]
 margin_left = 142.0
@@ -77,19 +81,22 @@ margin_bottom = 138.0
 rect_scale = Vector2( 10, 10 )
 text = "3"
 __meta__ = {
-"_edit_group_": true
+"_edit_use_anchors_": false
 }
 
 [node name="Button4" type="TextureButton" parent="." groups=[
 "buttons",
 ]]
-margin_left = 1170.0
-margin_top = 80.0
-margin_right = 1545.0
-margin_bottom = 455.0
+margin_left = 551.945
+margin_top = 756.43
+margin_right = 926.945
+margin_bottom = 1131.43
 rect_scale = Vector2( 0.7, 0.7 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="Button4"]
 margin_left = 142.0
@@ -98,25 +105,25 @@ margin_right = 150.0
 margin_bottom = 138.0
 rect_scale = Vector2( 10, 10 )
 text = "4"
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Button5" type="TextureButton" parent="." groups=[
 "buttons",
 ]]
-margin_left = 1490.0
-margin_top = 80.0
-margin_right = 1865.0
-margin_bottom = 455.0
+margin_left = 1042.97
+margin_top = 770.614
+margin_right = 1417.97
+margin_bottom = 1145.61
 rect_scale = Vector2( 0.7, 0.7 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="Button5"]
-margin_left = 143.0
+margin_left = 149.414
 margin_top = 129.0
-margin_right = 151.0
+margin_right = 157.414
 margin_bottom = 143.0
 rect_scale = Vector2( 10, 10 )
 text = "5"
@@ -126,3 +133,27 @@ __meta__ = {
 
 [node name="ButtonPressed" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 440.005
+margin_top = 8.9797
+margin_right = 508.005
+margin_bottom = 23.9797
+rect_scale = Vector2( 15, 15 )
+custom_fonts/mono_font = ExtResource( 6 )
+text = "TUTORIAL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 628.614
+margin_top = 489.02
+margin_right = 669.614
+margin_bottom = 504.02
+rect_scale = Vector2( 15, 15 )
+custom_fonts/mono_font = ExtResource( 6 )
+text = "START"
+__meta__ = {
+"_edit_use_anchors_": false
+}

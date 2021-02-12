@@ -50,6 +50,7 @@ margin_right = 1880.0
 margin_bottom = 1040.0
 __meta__ = {
 "_edit_group_": true,
+"_edit_use_anchors_": false,
 "_edit_vertical_guides_": [ 1350.0 ]
 }
 
@@ -242,6 +243,9 @@ texture_normal = ExtResource( 21 )
 texture_pressed = ExtResource( 22 )
 texture_hover = ExtResource( 23 )
 texture_disabled = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="square" type="Polygon2D" parent="UI/DinoSelector_3"]
 position = Vector2( 160, 140 )
@@ -316,9 +320,14 @@ z_index = 2
 [node name="Bip" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
 [connection signal="button_down" from="UI/play" to="UI/play" method="_on_play_button_down"]
 [connection signal="pressed" from="UI/abort" to="UI/play" method="_on_abort_pressed"]
 [connection signal="toggled" from="UI/DinoSelector_1/post_it" to="." method="_on_dinoFront_toggled"]
 [connection signal="toggled" from="UI/DinoSelector_2/post_it" to="." method="_on_dinoLeft_toggled"]
 [connection signal="toggled" from="UI/DinoSelector_3/post_it" to="." method="_on_dinoRight_toggled"]
 [connection signal="toggled" from="UI/DinoSelector_4/post_it" to="." method="_on_dinoBack_toggled"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

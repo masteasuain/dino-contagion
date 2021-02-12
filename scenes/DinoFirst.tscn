@@ -21,10 +21,10 @@ texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -1.12691, 0.0592464 )
+scale = Vector2( 0.99, 1.1 )
 texture = ExtResource( 3 )
 offset = Vector2( -30, -135 )
 hframes = 4
-frame = 1
 
 [node name="Anim" type="AnimationPlayer" parent="Sprite"]
 autoplay = "idle"
@@ -33,9 +33,8 @@ anims/sneeze = ExtResource( 5 )
 next/sneeze = "idle"
 
 [node name="Moquito" type="Sprite" parent="Sprite"]
-visible = false
 position = Vector2( 85.8285, -161.843 )
-scale = Vector2( 1.03621, 0.927572 )
+scale = Vector2( 1.1, 0.8 )
 texture = ExtResource( 6 )
 offset = Vector2( 3.05081e-05, 50.0078 )
 

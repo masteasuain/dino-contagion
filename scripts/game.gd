@@ -34,6 +34,8 @@ func _ready():
 	set_process(true)
 
 func _process(delta):
+
+
 	if global.reload:
 		print ("ALGOOOO")
 		global.level_selected=global.level_selected+1
@@ -123,52 +125,61 @@ func win():
 	
 
 func _on_dinoFront_toggled( button_pressed ):
-	if button_pressed:
-		dinoSelected = 0
-	else:
-		dinoSelected = -1
+
 	
 	get_node("UI/SFX_click").play()
 	get_node("UI/DinoSelector_2/post_it").pressed = false
 	get_node("UI/DinoSelector_3/post_it").pressed = false
 	get_node("UI/DinoSelector_4/post_it").pressed = false
-
+	if button_pressed:
+		get_node("UI/DinoSelector_1/post_it").pressed = true
+		dinoSelected = 0
+	else:
+		dinoSelected = -1
 
 func _on_dinoLeft_toggled( button_pressed ):
+
+	get_node("UI/SFX_click").play()
+	get_node("UI/DinoSelector_1/post_it").pressed = false
+	get_node("UI/DinoSelector_3/post_it").pressed = false
+	get_node("UI/DinoSelector_4/post_it").pressed = false
 	if button_pressed:
+		get_node("UI/DinoSelector_2/post_it").pressed = true
 		dinoSelected = 1
 	else:
 		dinoSelected = -1
 	
-	get_node("UI/SFX_click").play()
-	get_node("UI/DinoSelector_1/post_it").pressed = false
-	get_node("UI/DinoSelector_3/post_it").pressed = false
-	get_node("UI/DinoSelector_4/post_it").pressed = false
-
 
 func _on_dinoRight_toggled( button_pressed ):
-	if button_pressed:
-		dinoSelected = 2
-	else:
-		dinoSelected = -1
 	
+
 	get_node("UI/SFX_click").play()
 	get_node("UI/DinoSelector_1/post_it").pressed = false
 	get_node("UI/DinoSelector_2/post_it").pressed = false
 	get_node("UI/DinoSelector_4/post_it").pressed = false
-
+	if button_pressed:
+		print("_on_dinoRight_toggled 2")
+		get_node("UI/DinoSelector_3/post_it").pressed = true
+		dinoSelected = 2
+	else:
+		print("_on_dinoRight_toggled -1")
+		dinoSelected = -1
+	
 
 func _on_dinoBack_toggled( button_pressed ):
-	if button_pressed:
-		dinoSelected = 3
-	else:
-		dinoSelected = -1		
-	
+
 	get_node("UI/SFX_click").play()
 	get_node("UI/DinoSelector_1/post_it").pressed = false
 	get_node("UI/DinoSelector_2/post_it").pressed = false
 	get_node("UI/DinoSelector_3/post_it").pressed = false
-
+	if button_pressed:
+		get_node("UI/DinoSelector_4/post_it").pressed = true
+		print("_on_dinoBack_toggled 3")
+		dinoSelected = 3
+	else:
+		print("_on_dinoBack_toggled -1")
+		dinoSelected = -1		
+	
 
 func _input(event):
 	
@@ -240,3 +251,11 @@ func _input(event):
 						
 func posicionValida(tile):
 	return (tile.y <= global.ROWS and tile.y >= 0) and (tile.x <= global.COLUMNS and tile.x >= -1)
+
+
+func _on_Timer_timeout():
+	if $UI/play.get_rotation()>0:
+		$UI/play.set_rotation(-0.01)
+	else:
+		$UI/play.set_rotation(0.01)
+	pass # Replace with function body.

@@ -26,6 +26,8 @@ func _draw():
 		var pos_tile = tilemap_objects.world_to_map(curtgt)	
 		if (pos_tile in global.dinos_fixed) or (pos_tile in tilemap_objects.get_used_cells()):
 			color = Color(1,0,0)
+			draw_line(curtgt+Vector2(0, 0), curtgt+Vector2(p.x, p.y), color, line)
+			draw_line(curtgt+Vector2(0, p.y), curtgt+Vector2(p.x, 0), color, line)			
 		#drawn cursor cell selector if avaliable
 		if grid.has(curtgt):
 			
@@ -44,3 +46,5 @@ func _draw():
 				draw_texture(preload("res://assets/texture_dino-right.png"), Vector2(curtgt.x, curtgt.y - 50))
 			elif dinoSelected == 3 and dinoBack > 0:
 				draw_texture(preload("res://assets/texture_dino-back.png"), Vector2(curtgt.x, curtgt.y - 40))
+
+
