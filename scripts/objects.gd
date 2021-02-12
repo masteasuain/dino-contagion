@@ -77,7 +77,7 @@ func placeTiles(elementos, columnas, filas):
 			#tile=getTile(elementos[index])
 			tile=getTile(elementos[index])
 			if tile != 99:
-			    self.set_cellv(posicion, tile)
+				self.set_cellv(posicion, tile)
 			if tile == 99:
 				self.set_cellv(posicion, 29, true)
 			index=index+1
